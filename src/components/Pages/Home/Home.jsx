@@ -1,7 +1,13 @@
 import React from 'react'
-
-export const Home = () => {
+import Navbar from '../../navbar/Navbar';
+import Section1 from './Sections/Section1';
+ const Home = () => {
   return (
-    <main>Home</main>
+    <main>
+      <Navbar />
+      <Section1 />
+    </main>
   )
-}
+};
+export default Home;
+
