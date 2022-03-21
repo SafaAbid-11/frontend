@@ -1,0 +1,180 @@
+.section_2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15% 35% 50%;
+      grid-template-columns: 15% 35% 50%;
+  margin-top: 8rem;
+}
+
+.section_2_image_container {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  margin-right: 2rem;
+}
+
+.section_2_image_container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 700px;
+}
+
+@media screen and (max-width: 1024px) {
+  .section_2_image_container img {
+    height: 650px;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .section_2_image_container img {
+    height: 850px;
+    width: 400px;
+  }
+}
+
+.section_2_slogan {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+@media screen and (max-width: 678px) {
+  .section_2_slogan {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 0.2rem 1.5rem;
+    text-align: start;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section_2_slogan {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+  }
+}
+
+.section_2_slogan h1 {
+  color: var(--dark-green);
+  font-size: 3rem;
+  width: 80%;
+}
+
+@media screen and (max-width: 1024px) {
+  .section_2_slogan h1 {
+    font-size: 2.5rem;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section_2_slogan h1 {
+    font-size: 2.2rem;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .section_2_slogan h1 {
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .section_2_slogan h1 {
+    font-size: 2;
+    margin-bottom: 1rem;
+  }
+}
+
+.selection {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  gap: 1.2rem;
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 805px) {
+  .selection {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    margin-left: 1rem;
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .selection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .selection {
+    padding: 1rem 1.5rem;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+}
+
+.selection .buy,
+.selection .sell,
+.selection .rent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.selection .buy h3,
+.selection .sell h3,
+.selection .rent h3 {
+  color: var(--dark-green);
+  margin-bottom: 0.5rem;
+}
+
+.selection .buy p,
+.selection .sell p,
+.selection .rent p {
+  margin-bottom: 0.8rem;
+  font-size: 0.8rem;
+  color: var(--gray);
+}
+
+.selection .buy div,
+.selection .sell div,
+.selection .rent div {
+  margin-top: auto;
+}
+/*# sourceMappingURL=Section2.module.css.map */

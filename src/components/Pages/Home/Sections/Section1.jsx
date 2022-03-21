@@ -50,13 +50,7 @@ const Section1 = () => {
                 <option value=">500k">{`>500k`}</option>
               </select>
             </div>
-            {/* Search Rent or Buy*/ }
-            <div className='radio' > 
-                        <input type='radio' checked />
-                        <label>Buy</label>
-                        <input type='radio'  />
-                        <label>Rent</label>
-                        </div>
+            
                   {/* Search Button*/}
                   <Link to="search">
                   <button type='submit'>
