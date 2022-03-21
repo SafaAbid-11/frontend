@@ -1,0 +1,123 @@
+.section_1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+}
+
+@media screen and (max-width: 768px) {
+  .section_1 {
+    -ms-grid-columns: 60% 40%;
+        grid-template-columns: 60% 40%;
+  }
+}
+
+.Navbar {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  position: relative;
+  z-index: 100;
+}
+
+.location_container,
+.price_container {
+  margin-right: 10px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .location_container,
+  .price_container {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.location_container span,
+.price_container span {
+  color: var(--dark-green);
+  font-weight: 500;
+  font-size: 1.1rem;
+  height: 2rem;
+}
+
+.location_container input,
+.price_container input {
+  border: none;
+  outline: 1px solid var(--gray);
+  padding: 0.2rem 0.5rem;
+  font-size: 1rem;
+  color: var(--dark-green);
+  width: 300px;
+  height: 28px;
+}
+
+@media screen and (max-width: 430px) {
+  .location_container input,
+  .price_container input {
+    width: 100%;
+  }
+}
+
+.location_container select,
+.price_container select {
+  border: none;
+  outline: 1px solid var(--gray);
+  padding: 0.2rem 0.5rem;
+  width: 120px;
+  height: 28px;
+  font-size: 1rem;
+  color: var(--dark-green);
+}
+
+@media screen and (max-width: 430px) {
+  .location_container select,
+  .price_container select {
+    width: 100%;
+  }
+}
+
+.location_container select option,
+.price_container select option {
+  color: var(--dark-green);
+}
+
+.location_container:after,
+.price_container:after {
+  position: absolute;
+  content: "";
+  background: rgba(216, 216, 216, 0.56);
+  padding-top: 4rem;
+  padding-right: 1px;
+  right: -6px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+@media screen and (max-width: 768px) {
+  .location_container:after,
+  .price_container:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .price_container {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+/*# sourceMappingURL=Section1.module.css.map */
