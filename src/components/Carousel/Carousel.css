@@ -1,0 +1,12 @@
+.swiper-slide {
+  width: -webkit-max-content !important;
+  width: -moz-max-content !important;
+  width: max-content !important;
+}
+
+@media screen and (max-width: 425px) {
+  .swiper-slide {
+    width: 100% !important;
+  }
+}
+/*# sourceMappingURL=Carousel.css.map */
