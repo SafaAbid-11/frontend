@@ -1,7 +1,8 @@
 import styles from "./Section2.module.scss"
 import {ArrowButton} from "../../../buttons/Buttons"
 import Carousel from "../../../Carousel/Carousel"
-import { SwiperSlide } from "swiper/react"
+import { SwiperSlide } from "swiper/react";
+import Card from "../../../Card/Card"
 const Section3 = () => {
   return (
     <section className={styles.section_3}>
@@ -10,7 +11,14 @@ const Section3 = () => {
             <ArrowButton text="See More" path="buy"/>
         </div>
         {/* CARDS /CAROUSEL */}
-        <div className={styles.cards}></div>
+        <div className={styles.cards}>
+          <Carousel>
+          <SwiperSlide>
+            <Card/>
+          </SwiperSlide>
+          </Carousel>
+          
+        </div>
     </section>
   )
 }  
