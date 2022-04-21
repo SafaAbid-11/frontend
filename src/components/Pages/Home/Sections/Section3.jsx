@@ -16,6 +16,15 @@ const Section3 = () => {
           <SwiperSlide>
             <Card/>
           </SwiperSlide>
+          <SwiperSlide>
+            <Card/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card/>
+          </SwiperSlide>
           </Carousel>
           
         </div>
