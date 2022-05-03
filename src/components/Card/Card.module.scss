@@ -34,7 +34,7 @@
                 font-weight: 600;
                 border: 1px solid transparent;
                 transition: all ease-in-out 200ms;
-                &:hover {
+                :hover {
                     border-color: whitesmoke;
                     background: var(--dark-green);
                     color: whitesmoke;

@@ -1,6 +1,6 @@
 
 import styles from "./Card.module.scss";
-import React from 'react';
+import React,{useEffect} from 'react';
 //react icons
 import { BsFillDoorOpenFill } from "react-icons/bs";
 import { IoIosBed } from "react-icons/io";
@@ -10,6 +10,12 @@ import building3 from "../../assets/building3.jpg";
 import { Link } from "react-router-dom";
 
 const Card = ({ info, showInfo, secondClass }) => {
+  
+ useEffect(()=>{
+  console.log(info.bathrooms);
+   console.log("lenna ",info.imageSource);
+
+ })
     //CONVERT PRICE FUNC
   const convertPrice = (price) => {
     if (price >= 1000 && price < 999999) return `${price / 1000}k `;
@@ -74,11 +80,11 @@ const Card = ({ info, showInfo, secondClass }) => {
               >{`${convertPrice(info.price)}$`}</h2>
               <h2
                 style={showInfo.rent ? {} : { display: "none" }}
-              >{`${covnertRent(info.rent)}`}</h2>
+              >{`${covnertRent(info.rent)}$ per Mounth `}</h2>
             </div>
             {/* SEE MORE BUTTON */}
             <div className={styles.card_btn}>
-              <Link to={`/property/${info.id}`}>See More</Link>
+              <Link to={`/property${info.id}`}>See More</Link>
             </div>
           </div>
         </div>
